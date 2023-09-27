@@ -83,3 +83,12 @@ function maxOfTwoNumbers(x, y) {
   }
 
   console.log(maxOfThree(8, 16, 2));
+
+  //3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+  function isCharAVowel(char) {
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    return vowels.includes(char)
+  }
+
+  console.log(isCharAVowel('i'));
+  
