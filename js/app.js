@@ -53,6 +53,20 @@ playerTwo = getPlayerUserName('Laura'); // == > 'Laura'
 playerThree = getPlayerUserName('kate'); // == > 'kate'
 playerFour = getPlayerUserName('Kevin'); // == > 'Kevin'
 
-// James' best advice for the course: No matter what you think some variable is, you do not know the value is unless you console.log() it. This is your BEST TOOL.
+// James' best advice for the course: No matter what you think some variable is, you do not know what the value actually is unless you console.log() it. This is your BEST TOOL.
 // We use return when we want our functions to produce some value. Sometimes we return things; sometimes we don't.
 // Don't mix up printing to the console and returning! If you use console.log() only, you can print something, but you won't return anything!
+
+// 1. (completed above) Define a function, as a function declaration, maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a ternary expression - the Math.max method is not allowed
+function maxOfTwoNumbers(x, y) {
+    if (x >= y) {
+      return x;
+    } else {
+      return y;
+    }
+    
+    // or more "elegantly" using the fantastic ternary expression!
+    // return  x >= y ? x : y;
+  }
+  
+  console.log(maxOfTwoNumbers(3, 9));
