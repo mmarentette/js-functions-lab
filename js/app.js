@@ -91,4 +91,14 @@ function maxOfTwoNumbers(x, y) {
   }
 
   console.log(isCharAVowel('i'));
-  
+
+  //4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
+  function sumArray(numsArray) {
+    let sum = 0;
+    numsArray.forEach(function(num) {
+        sum += num;
+    });
+    return sum;
+  }
+
+  console.log(sumArray([1, 2, 3, 4, 5]));
