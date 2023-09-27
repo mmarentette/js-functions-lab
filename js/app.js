@@ -59,46 +59,57 @@ playerFour = getPlayerUserName('Kevin'); // == > 'Kevin'
 
 // 1. (completed above) Define a function, as a function declaration, maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a ternary expression - the Math.max method is not allowed
 function maxOfTwoNumbers(x, y) {
-    if (x >= y) {
-      return x;
-    } else {
-      return y;
-    }
-    
-    // or more "elegantly" using the fantastic ternary expression!
-    // return  x >= y ? x : y;
-  }
-  
-  console.log(maxOfTwoNumbers(3, 9));
+if (x >= y) {
+    return x;
+} else {
+    return y;
+}
 
-  //2. Define a function, as a function expression, maxOfThree that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
-  function maxOfThree(x, y, z) {
-    if (x > y && x > z) {
-        return x;
-    } else if (y > x && y > z) {
-        return y;
-    } else if (z > x && z > y) {
-        return z;
-    }
-  }
+// or more "elegantly" using the fantastic ternary expression!
+// return  x >= y ? x : y;
+}
 
-  console.log(maxOfThree(8, 16, 2));
+console.log(maxOfTwoNumbers(3, 9));
 
-  //3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
-  function isCharAVowel(char) {
-    const vowels = ['a', 'e', 'i', 'o', 'u']
-    return vowels.includes(char)
-  }
+//2. Define a function, as a function expression, maxOfThree that takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
+function maxOfThree(x, y, z) {
+if (x > y && x > z) {
+    return x;
+} else if (y > x && y > z) {
+    return y;
+} else if (z > x && z > y) {
+    return z;
+}
+}
 
-  console.log(isCharAVowel('i'));
+console.log(maxOfThree(8, 16, 2));
 
-  //4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
-  function sumArray(numsArray) {
-    let sum = 0;
-    numsArray.forEach(function(num) {
-        sum += num;
-    });
-    return sum;
-  }
+//3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+function isCharAVowel(char) {
+const vowels = ['a', 'e', 'i', 'o', 'u']
+return vowels.includes(char)
+}
 
-  console.log(sumArray([1, 2, 3, 4, 5]));
+console.log(isCharAVowel('i'));
+
+//4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
+function sumArray(numsArray) {
+let sum = 0;
+numsArray.forEach(function(num) {
+    sum += num;
+});
+return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5]));
+
+//5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
+function multiplyArray(numsArray) {
+let product = 1;
+numsArray.forEach(function(num) {
+    product *= num;
+});
+return product;
+}
+
+console.log(multiplyArray([2, 4, 5]));
