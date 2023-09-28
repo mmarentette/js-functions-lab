@@ -59,11 +59,11 @@ playerFour = getPlayerUserName('Kevin'); // == > 'Kevin'
 
 // 1. (completed above) Define a function, as a function declaration, maxOfTwoNumbers that takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a ternary expression - the Math.max method is not allowed
 function maxOfTwoNumbers(x, y) {
-if (x >= y) {
-    return x;
-} else {
-    return y;
-};
+    if (x >= y) {
+        return x;
+    } else {
+        return y;
+    };
 
 // or more "elegantly" using the fantastic ternary expression!
 // return  x >= y ? x : y;
@@ -140,7 +140,6 @@ function longestStringInArray(stringsArray) {
 console.log(longestStringInArray(['Alabama', 'Arkansas', 'Michigan', 'Massachusetts']));
 
 //9. Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
-
 function stringsLongerThan(stringsArray, minLength) {
     longerStrings = [];
     stringsArray.forEach(function(string) {
