@@ -101,7 +101,7 @@ function sumArray(numsArray) {
     return sum;
 };
 
-console.log(sumArray([1, 2, 3, 4, 5]));
+console.log(sumArray([2, 4, 5]));
 
 //5. Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
 function multiplyArray(numsArray) {
